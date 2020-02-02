@@ -1,0 +1,45 @@
+{
+  "name": "nest-typescript-starter",
+  "version": "1.0.0",
+  "description": "Nest TypeScript starter repository",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon",
+    "seq": "sequelize",
+    "test": "jest --config=jest.json",
+    "test:watch": "jest --watch --config=jest.json",
+    "test:coverage": "jest --config=jest.json --coverage --coverageDirectory=coverage",
+    "prestart:prod": "tsc",
+    "start:prod": "node dist/main.js"
+  },
+  "dependencies": {
+    "@nestjs/common": "^6.11.5",
+    "@nestjs/core": "^6.11.5",
+    "@nestjs/microservices": "^6.11.5",
+    "@nestjs/platform-express": "^6.11.5",
+    "@nestjs/testing": "^6.11.5",
+    "@nestjs/websockets": "^6.11.5",
+    "class-transformer": "^0.2.3",
+    "class-validator": "^0.11.0",
+    "mysql2": "^2.1.0",
+    "pg": "^7.18.1",
+    "redis": "^2.8.0",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^6.5.4",
+    "sequelize": "^5.21.3",
+    "sequelize-cli-typescript": "^3.2.0-c",
+    "sequelize-typescript": "^1.1.0",
+    "typescript": "^3.7.5"
+  },
+  "devDependencies": {
+    "@types/jest": "^25.1.1",
+    "@types/node": "^13.7.0",
+    "@types/sequelize": "^4.28.8",
+    "jest": "^25.1.0",
+    "nodemon": "^2.0.2",
+    "ts-jest": "^25.1.0",
+    "ts-node": "^8.6.2",
+    "tslint": "^6.0.0"
+  }
+}
